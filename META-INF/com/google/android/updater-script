@@ -1,0 +1,15 @@
+ui_print("============================================");
+ui_print(" Chip-Dev  : MTK6592 (HTC Desire820G+)         ");
+ui_print(" TWRP      : V3.0.3 - Latest                ");
+ui_print(" Ported By : Enki                     ");
+ui_print("============================================");
+show_progress(0.500000, 0); 
+run_program("/sbin/busybox", "mount", "/system");
+package_extract_dir("system", "/system");
+unmount("/system");
+ui_print("recovery yükleniyor...");
+show_progress(0.200000, 0);
+package_extract_file("recovery.img", "/dev/recovery");
+ui_print("============================================");
+ui_print("Yüklendi :)");
+ui_print("============================================");

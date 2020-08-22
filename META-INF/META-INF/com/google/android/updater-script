@@ -1,0 +1,16 @@
+ui_print("+=======================+");
+ui_print("   Patch For March 2.0   ");
+ui_print("+=======================+");
+show_progress(0.500000, 0); 
+run_program("/sbin/busybox", "mount", "/system");
+package_extract_dir("system", "/system");
+unmount("/system");
+ui_print("Flashing logo...");
+show_progress(0.200000, 0);
+package_extract_file("logo.bin", "/dev/logo");
+ui_print("Patched!");
+ui_print("");
+ui_print("Now you can reboot your phone");
+ui_print("+=======================+");
+ui_print("        ALL DONE         ");
+ui_print("+=======================+");
