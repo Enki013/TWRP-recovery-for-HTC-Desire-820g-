@@ -1,1 +1,1 @@
-# TWRP-recovery-for-HTC-Desire-820g-
+# TWRP-recovery 3.2.3 for HTC-Desire-820g+ by enki
