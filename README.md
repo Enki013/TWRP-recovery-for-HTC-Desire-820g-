@@ -1,1 +1,2 @@
-# TWRP-recovery-for-HTC-Desire-820g-
+# TWRP-recovery 3.1.1 for HTC Desire 820G+ by enki
+download as zip and install from twrp :)
